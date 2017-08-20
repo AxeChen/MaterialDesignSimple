@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mg.axe.snackbarsimple.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简单提示文字" />
+
+        <RadioButton
+            android:id="@+id/rbTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加可点击的按钮" />
+
+
+        <RadioButton
+            android:id="@+id/rbThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="必须点击按钮之后才会消失" />
+
+        <RadioButton
+            android:id="@+id/rbFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加状态回调" />
+
+        <RadioButton
+            android:id="@+id/rbFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改文字颜色" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rbGroup"
+        android:onClick="showSnackbar"
+        android:text="开始" />
+
+
+</RelativeLayout>
