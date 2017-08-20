@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/navigationview/navigationview.iml" filepath="$PROJECT_DIR$/navigationview/navigationview.iml" />
       <module fileurl="file://$PROJECT_DIR$/snackbarsimple/snackbarsimple.iml" filepath="$PROJECT_DIR$/snackbarsimple/snackbarsimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textinputlayout/textinputlayout.iml" filepath="$PROJECT_DIR$/textinputlayout/textinputlayout.iml" />
     </modules>
   </component>
 </project>
