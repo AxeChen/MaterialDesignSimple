@@ -1,1 +1,1 @@
-include ':app', ':snackbarsimple', ':navigationview', ':textinputlayout'
+include ':app', ':snackbarsimple', ':navigationview', ':textinputlayout', ':toolbarsimple'
