@@ -1,12 +1,8 @@
 package com.mg.axe.recyclerviewandcardview;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.Canvas;
-import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -42,14 +38,19 @@ public class RecyclerGridViewActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 3, LinearLayoutManager.VERTICAL, false));
+        setContentView(R.layout.activity_list);
+        initView();
         initData();
         imgWidth = getScreenWidth()[0] / 3;
         layoutParams = new ViewGroup.LayoutParams(imgWidth, imgWidth);
         recyclerView.setAdapter(new RecyclerGridViewActivity.MyAdapter());
+    }
+
+    private void initView() {
+        mInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        // 设置GridLayoutManager
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3, LinearLayoutManager.VERTICAL, false));
     }
 
     private void initData() {
