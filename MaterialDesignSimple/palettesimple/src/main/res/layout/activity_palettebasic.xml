@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mg.axe.palattesimple.PalettesBasicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/tvVibrantColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="VibrantColor" />
+
+        <TextView
+            android:id="@+id/tvMutedColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="MutedColor" />
+
+        <TextView
+            android:id="@+id/tvDarkVibrantColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="DarkVibrantColor" />
+
+        <TextView
+            android:id="@+id/tvDarkMutedColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="DarkMutedColor" />
+
+
+
+        <TextView
+            android:id="@+id/tvLightVibrantColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="LightVibrantColor" />
+
+
+        <TextView
+            android:id="@+id/tvLightMutedColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="LightMutedColor" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

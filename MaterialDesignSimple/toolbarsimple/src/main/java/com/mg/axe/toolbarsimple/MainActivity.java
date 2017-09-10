@@ -1,5 +1,6 @@
 package com.mg.axe.toolbarsimple;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+       ActionBar actionBar = getSupportActionBar();
     }
 
     private void setToolbarProperty() {
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "点击了Navigation按钮", Toast.LENGTH_SHORT).show();
+            }
+        });
+        // toolbar的Menu回调
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                return false;
             }
         });
     }
