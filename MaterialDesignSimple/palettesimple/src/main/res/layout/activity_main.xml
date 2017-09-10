@@ -7,11 +7,13 @@
     <Button
         android:id="@+id/btnBasic"
         android:text="基本使用"
+        android:onClick="basicUse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Button
-        android:text=""
+        android:text="示例使用"
+        android:onClick="simpleUse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
