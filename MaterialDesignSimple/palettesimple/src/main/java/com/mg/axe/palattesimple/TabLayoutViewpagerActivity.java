@@ -127,27 +127,27 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @Override
             public void onGenerated(Palette palette) {
-                int darkMutedColor = palette.getDarkMutedColor(Color.BLUE);
-                int darkVibrantColor = palette.getDarkVibrantColor(Color.BLUE);
-                int lightVibrantColor = palette.getLightVibrantColor(Color.BLUE);
-                int lightMutedColor = palette.getLightMutedColor(Color.BLUE);
-                int vibrantColor = palette.getVibrantColor(Color.BLUE);
-                int mutedColor = palette.getMutedColor(Color.BLUE);
+//                int darkMutedColor = palette.getDarkMutedColor(Color.BLUE);
+//                int darkVibrantColor = palette.getDarkVibrantColor(Color.BLUE);
+//                int lightVibrantColor = palette.getLightVibrantColor(Color.BLUE);
+//                int lightMutedColor = palette.getLightMutedColor(Color.BLUE);
+//                int vibrantColor = palette.getVibrantColor(Color.BLUE);
+//                int mutedColor = palette.getMutedColor(Color.BLUE);
 
                 // 设置TabLayout颜色(直接设置颜色)
 //                tabLayout.setBackgroundColor(vibrantColor);
 //                toolbar.setBackgroundColor(vibrantColor);
                 //
 
-                Palette.Swatch vibreant = palette.getVibrantSwatch();
-                if (vibreant == null) {
+                Palette.Swatch vibrant = palette.getVibrantSwatch();
+                if (vibrant == null) {
                     for (Palette.Swatch swatch : palette.getSwatches()) {
-                        vibreant = swatch;
+                        vibrant = swatch;
                         break;
                     }
                 }
                 // 这样获取的颜色可以进行改变。
-                int rbg = vibreant.getRgb();
+                int rbg = vibrant.getRgb();
 
                 if (position == 0) {
                     tab1.setContent(rbg);
@@ -180,7 +180,6 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
         green = (int) Math.floor(green * (1 - 0.2));
         blue = (int) Math.floor(blue * (1 - 0.2));
         return Color.rgb(red, green, blue);
-
     }
 
     private class PagerAdapter extends FragmentPagerAdapter {
