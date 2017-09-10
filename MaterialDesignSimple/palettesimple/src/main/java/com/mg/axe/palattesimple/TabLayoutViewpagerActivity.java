@@ -13,6 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.graphics.Palette;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Window;
 
 import java.util.ArrayList;
@@ -47,6 +48,8 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
         viewPager.setAdapter(new PagerAdapter(getSupportFragmentManager()));
         tabLayout.setupWithViewPager(viewPager);
         addPageChangeListener();
+//        viewPager.setCurrentItem(0);
+
     }
 
     private void initActionBar() {
@@ -82,28 +85,32 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
         fragments.add(tab4);
     }
 
+    private boolean isInit = false;
+
     private void addPageChangeListener() {
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
+                // 这个方法在setAdapter之后会调用一次，在这里初始化第一个界面，而且只调用一次
+                if (!isInit) {
+                    isInit = true;
+                    setPaletteColor(position);
+                }
             }
 
             @Override
             public void onPageSelected(int position) {
-                getPaletteColor(position);
+                setPaletteColor(position);
             }
 
             @Override
             public void onPageScrollStateChanged(int state) {
-
             }
         });
-
     }
 
-    private void getPaletteColor(final int position) {
+    private void setPaletteColor(final int position) {
         Bitmap bitmap = null;
         if (position == 0) {
             bitmap = tab1.getBitmap();
@@ -113,6 +120,9 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
             bitmap = tab3.getBitmap();
         } else if (position == 3) {
             bitmap = tab4.getBitmap();
+        }
+        if (bitmap == null) {
+            return;
         }
         Palette.from(bitmap).generate(new Palette.PaletteAsyncListener() {
             @Override
@@ -140,13 +150,13 @@ public class TabLayoutViewpagerActivity extends AppCompatActivity {
                 int rbg = vibreant.getRgb();
 
                 if (position == 0) {
-                    tab1.setTextBg(rbg);
+                    tab1.setContent(rbg);
                 } else if (position == 1) {
-                    tab2.setTextBg(rbg);
+                    tab2.setContent(rbg);
                 } else if (position == 2) {
-                    tab3.setTextBg(rbg);
+                    tab3.setContent(rbg);
                 } else if (position == 3) {
-                    tab4.setTextBg(rbg);
+                    tab4.setContent(rbg);
                 }
 
                 tabLayout.setBackgroundColor(rbg);

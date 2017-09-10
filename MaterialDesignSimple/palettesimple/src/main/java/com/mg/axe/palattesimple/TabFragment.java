@@ -46,12 +46,13 @@ public class TabFragment extends Fragment {
         return view;
     }
 
-    public void setTextBg(int rgb) {
+    public void setContent(int rgb) {
         tvBG.setBackgroundColor(rgb);
         tvBG.setAlpha((float) 0.5);
     }
 
     public Bitmap getBitmap() {
+
         return bitmap;
     }
 }
