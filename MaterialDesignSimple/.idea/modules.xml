@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/collapsingtoolbarlayout/collapsingtoolbarlayout.iml" filepath="$PROJECT_DIR$/collapsingtoolbarlayout/collapsingtoolbarlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/coordinatorlayoutscrollsimple/coordinatorlayoutscrollsimple.iml" filepath="$PROJECT_DIR$/coordinatorlayoutscrollsimple/coordinatorlayoutscrollsimple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/floatactionbuttonsimple/floatactionbuttonsimple.iml" filepath="$PROJECT_DIR$/floatactionbuttonsimple/floatactionbuttonsimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/navigationview/navigationview.iml" filepath="$PROJECT_DIR$/navigationview/navigationview.iml" />
       <module fileurl="file://$PROJECT_DIR$/palettesimple/palettesimple.iml" filepath="$PROJECT_DIR$/palettesimple/palettesimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/recyclerviewandcardview/recyclerviewandcardview.iml" filepath="$PROJECT_DIR$/recyclerviewandcardview/recyclerviewandcardview.iml" />

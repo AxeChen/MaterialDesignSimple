@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mg.axe.floatactionbuttonsimple.MainActivity">
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="使用app:layout_anchor" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:elevation="20dp"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_dialog_map" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:elevation="10dp"
+        app:fabSize="mini" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:elevation="10dp"
+        app:fabSize="mini"
+        app:layout_anchorGravity="right|center"
+        app:layout_anchor="@id/btnClick" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_dialog_email"
+        app:backgroundTint="@color/colorPrimary"
+        app:elevation="10dp"
+        app:fabSize="auto"
+        app:rippleColor="@color/colorAccent" />
+
+</android.support.design.widget.CoordinatorLayout>
