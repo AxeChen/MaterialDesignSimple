@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/bottomsheetsimple" />
             <option value="$PROJECT_DIR$/collapsingtoolbarlayout" />
             <option value="$PROJECT_DIR$/coordinatorlayoutscrollsimple" />
             <option value="$PROJECT_DIR$/floatactionbuttonsimple" />

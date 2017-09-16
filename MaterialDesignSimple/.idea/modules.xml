@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialDesignSimple.iml" filepath="$PROJECT_DIR$/MaterialDesignSimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bottomsheetsimple/bottomsheetsimple.iml" filepath="$PROJECT_DIR$/bottomsheetsimple/bottomsheetsimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/collapsingtoolbarlayout/collapsingtoolbarlayout.iml" filepath="$PROJECT_DIR$/collapsingtoolbarlayout/collapsingtoolbarlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/coordinatorlayoutscrollsimple/coordinatorlayoutscrollsimple.iml" filepath="$PROJECT_DIR$/coordinatorlayoutscrollsimple/coordinatorlayoutscrollsimple.iml" />
       <module fileurl="file://$PROJECT_DIR$/floatactionbuttonsimple/floatactionbuttonsimple.iml" filepath="$PROJECT_DIR$/floatactionbuttonsimple/floatactionbuttonsimple.iml" />

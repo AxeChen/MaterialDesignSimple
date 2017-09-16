@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mg.axe.bottomsheetsimple.MainActivity">
+
+    <Button
+        android:id="@+id/btnBottomSheetBehavior"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="OpenBottomBehavior"
+        android:text="BottomSheetBehavior" />
+
+    <Button
+        android:id="@+id/btnBottomSheetDialogFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:onClick="OpenBottomSheetDialogFragment"
+        android:text="SheetDialogFragment" />
+
+    <Button
+        android:id="@+id/btnBottomSheetDialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:onClick="OpenBottomSheetDialog"
+        android:text="BottomSheetDialog" />
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="80dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="THIS IS TITLE"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Bottom Sheet is a material design component, that was added to design support library in version 23.2. Bottom sheet is a very simple window that displays from the bottom of the screen, and can be used to reveal more content to the user. Examples of bottom sheet can be seen in some of Google’s apps and widgets, such as the Place Picker from the Places API." />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
